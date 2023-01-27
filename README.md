@@ -6,5 +6,5 @@ About the syntax:
 - UpperCamelCase format.
 
 Compilation:
-- make
+- `make`
 - Compiling with -Wall -Wextra -Werror and -std=c++98
