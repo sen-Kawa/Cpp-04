@@ -11,10 +11,10 @@ class Dog : public Animal
 
 	public:
 
-		void		makeSound(void) const;
-		std::string	getDog(void) const;
+		virtual void	makeSound(void) const;
+		std::string		getDog(void) const;
 		
-		Dog&		operator=(Dog const &assign);
+		Dog&			operator=(Dog const &assign);
 
 		Dog(void);
 		Dog(Dog const &src);
