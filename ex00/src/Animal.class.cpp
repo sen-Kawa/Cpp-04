@@ -1,4 +1,4 @@
-#include "Animal.class.hpp"
+#include "../header/Animal.class.hpp"
 
 void Animal::makeSound(void) const
 {
@@ -14,6 +14,8 @@ std::string Animal::getType(void) const
 
 Animal &	Animal::operator=(const Animal &assign)
 {
+	std::cout
+	<< "Animal assign overload" << std::endl;
 	if (this != &assign)
 	{
 		this->type = assign.getType();
@@ -23,17 +25,23 @@ Animal &	Animal::operator=(const Animal &assign)
 
 Animal::Animal(Animal const &src)
 {
+	std::cout
+	<< "Animal copy constructor" << std::endl;
 	*this = src;
 	return ;
 }
 
 Animal::Animal(void)
 {
+	std::cout
+	<< "Animal constructor" << std::endl;
 	return ;
 }
 
 Animal::~Animal(void)
 {
+	std::cout
+	<< "Animal destructor" << std::endl;
 	return ;
 }
 

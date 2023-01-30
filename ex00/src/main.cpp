@@ -1,8 +1,8 @@
-#include "Animal.class.hpp"
-#include "Cat.class.hpp"
-#include "Dog.class.hpp"
+#include "../header/Animal.class.hpp"
+#include "../header/Cat.class.hpp"
+#include "../header/Dog.class.hpp"
 
-int main (void)
+int main(void)
 {
 	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
@@ -13,6 +13,8 @@ int main (void)
 	i->makeSound(); //will output the cat sound!
 	j->makeSound();
 	meta->makeSound();
-	return (0);
+	delete meta;
+	delete j;
+	delete i;
+	return(0);
 }
-

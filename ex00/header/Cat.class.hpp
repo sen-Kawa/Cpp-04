@@ -18,7 +18,6 @@ class Cat : public Animal
 		Cat(void);
 		Cat(Cat const &src);
 		~Cat(void);
-
 };
 
 #endif

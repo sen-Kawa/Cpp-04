@@ -1,5 +1,5 @@
-#include "Dog.class.hpp"
-#include "Animal.class.hpp"
+#include "../header/Dog.class.hpp"
+#include "../header/Animal.class.hpp"
 
 void Dog::makeSound(void) const
 {

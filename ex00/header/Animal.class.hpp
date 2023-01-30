@@ -20,8 +20,7 @@ class Animal
 
 		Animal(void);
 		Animal(Animal const &src);
-		~Animal(void);
-
+		virtual	~Animal(void);
 };
 
 #endif

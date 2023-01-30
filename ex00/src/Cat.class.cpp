@@ -1,5 +1,5 @@
-#include "Cat.class.hpp"
-#include "Animal.class.hpp"
+#include "../header/Cat.class.hpp"
+#include "../header/Animal.class.hpp"
 
 void Cat::makeSound(void) const
 {
