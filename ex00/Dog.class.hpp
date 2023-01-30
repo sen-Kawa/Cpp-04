@@ -12,7 +12,6 @@ class Dog : public Animal
 	public:
 
 		virtual void	makeSound(void) const;
-		std::string		getDog(void) const;
 		
 		Dog&			operator=(Dog const &assign);
 
