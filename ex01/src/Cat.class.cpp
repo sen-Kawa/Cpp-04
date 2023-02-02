@@ -12,7 +12,11 @@ Cat& Cat::operator=(const Cat &assign)
 {
 	std::cout
 	<< "Cat assign overload" << std::endl;
-	this->type = assign.type;
+	if (this != &assign)
+	{
+		*brain = *(assign.brain);
+		this->type = assign.type;
+	}
 	return (*this);
 }
 
@@ -21,6 +25,8 @@ Cat::Cat(Cat const &src) : Animal()
 	std::cout
 	<< "Cat copy constructor" << std::endl;
 	this->type = src.type;
+	this->brain = new Brain();
+	*brain = *src.brain;
 	return ;
 }
 

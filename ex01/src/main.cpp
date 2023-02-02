@@ -20,7 +20,7 @@ int main(void)
 	delete cato;
 	delete animal;
 */
-	std::cout << "\nSUBJECT TESTS" << std::endl;
+	std::cout << "\nSUBJECT TESTS 1" << std::endl;
 	std::cout << "-----------" << std::endl;
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
@@ -31,6 +31,28 @@ int main(void)
 	j->makeSound();
 	delete j;
 	delete i;
+
+	std::cout << "\nSUBJECT TESTS 2" << std::endl;
+	std::cout << "-----------" << std::endl;
+	int		size = 20;
+	Animal* animals[size];
+
+	for (int i = 0; i < size; i++)
+	{
+		if (i % 2 == 0)
+			animals[i] = new Dog();
+		else
+			animals[i] = new Cat();
+	}
+	for (int i = 0; i < size; i++)
+	{
+		std::cout
+		<< animals[i]->getType() << std::endl;
+	}
+	for (int i = 0; i < size; i++)
+	{
+		delete animals[i];
+	}
 
 	return(0);
 }

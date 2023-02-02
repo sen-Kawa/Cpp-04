@@ -12,7 +12,11 @@ Dog& Dog::operator=(const Dog &assign)
 {
 	std::cout
 	<< "Dog assign overload" << std::endl;
-	this->type = assign.type;
+	if (this != &assign)
+	{
+		*brain = *(assign.brain);
+		this->type = assign.type;
+	}
 	return (*this);
 }
 
@@ -21,6 +25,8 @@ Dog::Dog(Dog const &src) : Animal()
 	std::cout
 	<< "Dog copy constructor" << std::endl;
 	this->type = src.type;
+	this->brain = new Brain();
+	*brain = *src.brain;
 	return ;
 }
 
