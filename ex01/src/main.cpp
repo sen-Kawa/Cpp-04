@@ -5,7 +5,7 @@
 
 int main(void)
 {
-/*	std::cout << "CLASS TESTS" << std::endl;
+	std::cout << "CLASS TEST" << std::endl;
 	std::cout << "-----------" << std::endl;
 	const Animal* animal = new Animal();
 	const Dog* dogo = new Dog();
@@ -19,7 +19,7 @@ int main(void)
 	delete dogo;
 	delete cato;
 	delete animal;
-*/
+
 	std::cout << "\nSUBJECT TESTS 1" << std::endl;
 	std::cout << "-----------" << std::endl;
 	const Animal* j = new Dog();
