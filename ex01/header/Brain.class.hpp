@@ -11,7 +11,7 @@ class Brain
 
 	public:
 
-		int	getBrain(void) const;
+		const std::string	*getBrain(void) const;
 
 		Brain(void);
 		Brain(Brain const &src);
