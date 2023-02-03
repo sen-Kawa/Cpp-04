@@ -2,10 +2,10 @@
 # define CAT_CLASS_HPP
 
 #include <iostream>
-#include "Animal.class.hpp"
+#include "AAnimal.class.hpp"
 #include "Brain.class.hpp"
 
-class Cat : public Animal
+class Cat : public AAnimal
 {
 	private:
 

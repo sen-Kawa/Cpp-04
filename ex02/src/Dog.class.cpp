@@ -1,5 +1,5 @@
 #include "../header/Dog.class.hpp"
-#include "../header/Animal.class.hpp"
+#include "../header/AAnimal.class.hpp"
 
 void Dog::makeSound(void) const
 {
@@ -20,7 +20,7 @@ Dog& Dog::operator=(const Dog &assign)
 	return (*this);
 }
 
-Dog::Dog(Dog const &src) : Animal()
+Dog::Dog(Dog const &src) : AAnimal()
 {
 	std::cout
 	<< "Dog copy constructor" << std::endl;
@@ -30,7 +30,7 @@ Dog::Dog(Dog const &src) : Animal()
 	return ;
 }
 
-Dog::Dog(void) : Animal()
+Dog::Dog(void) : AAnimal()
 {
 	std::cout
 	<< "Dog default constructor" << std::endl;

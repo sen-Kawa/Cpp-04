@@ -2,10 +2,10 @@
 # define DOG_CLASS_HPP
 
 #include <iostream>
-#include "Animal.class.hpp"
+#include "AAnimal.class.hpp"
 #include "Brain.class.hpp"
 
-class Dog : public Animal
+class Dog : public AAnimal
 {
 	private:
 

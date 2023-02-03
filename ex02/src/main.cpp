@@ -1,4 +1,4 @@
-#include "../header/Animal.class.hpp"
+#include "../header/AAnimal.class.hpp"
 #include "../header/Cat.class.hpp"
 #include "../header/Dog.class.hpp"
 #include "../header/Brain.class.hpp"
@@ -7,7 +7,7 @@ int main(void)
 {
 /*	std::cout << "CLASS TEST" << std::endl;
 	std::cout << "-----------" << std::endl;
-	const Animal* animal = new Animal();
+	const AAnimal* animal = new AAnimal();
 	const Dog* dogo = new Dog();
 	const Cat* cato = new Cat();
 
@@ -22,8 +22,8 @@ int main(void)
 */
 	std::cout << "\nSUBJECT TESTS 1" << std::endl;
 	std::cout << "-----------" << std::endl;
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
+	const AAnimal* j = new Dog();
+	const AAnimal* i = new Cat();
 
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
@@ -35,7 +35,7 @@ int main(void)
 	std::cout << "\nSUBJECT TESTS 2" << std::endl;
 	std::cout << "-----------" << std::endl;
 	int		size = 20;
-	Animal* animals[size];
+	AAnimal* animals[size];
 
 	for (int i = 0; i < size; i++)
 	{

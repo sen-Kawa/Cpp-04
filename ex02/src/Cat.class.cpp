@@ -1,5 +1,5 @@
 #include "../header/Cat.class.hpp"
-#include "../header/Animal.class.hpp"
+#include "../header/AAnimal.class.hpp"
 
 void Cat::makeSound(void) const
 {
@@ -20,7 +20,7 @@ Cat& Cat::operator=(const Cat &assign)
 	return (*this);
 }
 
-Cat::Cat(Cat const &src) : Animal()
+Cat::Cat(Cat const &src) : AAnimal()
 {
 	std::cout
 	<< "Cat copy constructor" << std::endl;
@@ -30,7 +30,7 @@ Cat::Cat(Cat const &src) : Animal()
 	return ;
 }
 
-Cat::Cat(void) : Animal()
+Cat::Cat(void) : AAnimal()
 {
 	std::cout
 	<< "Cat default constructor" << std::endl;
